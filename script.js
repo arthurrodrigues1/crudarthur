@@ -1,16 +1,14 @@
-let itens = [
-    
-]
-
-function novoitem(){
+function adicionaritem(){
     let input = document.getElementById("iteminput")
     let novoitem = input.value
     
     if (novoitem === ""){
         alert("por favor, insira um item")
     }
+    criartd()
+}
 
-    let lista = document.getElementById
-
-    input.value = ""
+function criartd(){
+    let tabela = getElementById("tabela")
+    tabela.appendChild(document.createElement(`<tr><td>${novoitem}</td></tr>`))
 }
