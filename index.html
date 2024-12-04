@@ -3,15 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estoque - Construcao Civil</title>
+    <title>Estoque - Construção Civil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <H1>Estoque - Construcao Civil</H1>
-    <a href="additemestoque.html">Adicionar Itens no Estoque</a> <br>
-    <a href="listaritemestoque.html">Listar os Itens do Estoque</a> <br>
-    <a href="alteraritemestoque.html">Alterar os Itens do Estoque</a> <br>
-    <a href="removeritemestoque.html">Remover um item do Estoque</a> <br>
-    <script src="script.js"></script>
+    <header>
+        <h1>Estoque - Construção Civil</h1>
+        <nav>
+            <a href="#addItem">Adicionar Itens</a>
+            <a href="#listarItens">Listar Itens</a>
+            <a href="#alterarItem">Alterar Itens</a>
+            <a href="#removerItem">Remover Itens</a>
+        </nav>
+    </header>
+    <div id="addItem" class="page">
+        <h1>Adicionar Itens ao Estoque</h1>
+        <form action="#">
+            <label for="nomeItem">Nome do item:</label>
+            <input type="text" id="nomeItem" required>
+            <button onclick="adicionar()">Adicionar</button>
+        </form>
+        <a href="#">Voltar</a>
+    </div>
+    <div id="listarItens" class="page">
+        <h1>Listar os Itens do Estoque</h1>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <a href="#">Voltar</a>
+    </div>
+    <div id="alterarItem" class="page">
+        <h1>Alterar os Itens do Estoque</h1>
+        <form action="#">
+            <label for="aditarNomeItem">Nome do Item:</label>
+            <input type="text" id="aditarNomeItem" required>
+            <button type="submit">Alterar</button>
+        </form>
+        <a href="#">Voltar</a>
+    </div>
+    <div id="removerItem" class="page">
+        <h1>Remover um Item do Estoque</h1>
+        <form action="#">
+            <label for="removerItemInput">Nome do item:</label>
+            <input type="text" id="removerItemInput" required>
+            <button type="submit">Remover</button>
+        </form>
+        <a href="#">Voltar</a>
+    </div>
 </body>
 </html>
